@@ -1,7 +1,7 @@
 import os
 import pickle
 
-# parte dos dictionary
+# parte dos dicionario
 produtos = {}
 clientes = {}
 try:
