@@ -18,11 +18,11 @@ while resp != '0':
   print("############################################")
   print("######       Projeto Fab_Queijo       ######")
   print("############################################")
-  print("#####      1 - Módulo Clientes        #####")
-  print("#####      2 - Módulo Produtos        #####")
-  print("#####      3 - Módulo Vendas          #####")
-  print("#####      4 - Módulo Informações     #####")
-  print("#####      0 - Sair                   #####")
+  print("#####      1 - Módulo Clientes        ######")
+  print("#####      2 - Módulo Produtos        ######")
+  print("#####      3 - Módulo Vendas          ######")
+  print("#####      4 - Módulo Informações     ######")
+  print("#####      0 - Sair                   ######")
   resp = input("##### Escolha sua opção: ")
 # mudulo de clientes
   if resp == '1':
@@ -92,12 +92,12 @@ while resp != '0':
         while update_resp != "0":
           os.system('clear')
           print("###################################################")
-          print("#####     Você está no Módulo Clientes        ####")
-          print("##################################################")
-          print("#####      1 - Atualizar Nome                #####")
-          print("#####      2 - Atualizar Email               #####")
-          print("#####      3 - Atualizar Telefone            #####")
-          print("#####      0 - Voltar Para o Modulo Cliente  #####")
+          print("#####     Você está no Módulo Clientes        #####")
+          print("###################################################")
+          print("#####      1 - Atualizar Nome                ######")
+          print("#####      2 - Atualizar Email               ######")
+          print("#####      3 - Atualizar Telefone            ######")
+          print("#####      0 - Voltar Para o Modulo Cliente  ######")
           update_resp = input("##### Escolha sua opção: ")
   
           if update_resp == '1':
@@ -166,9 +166,9 @@ while resp != '0':
   elif resp == '2':
       os.system('clear')
       print()
-      print("############################################")
-      print("#####   Você está no Módulo Produtos    ####")
-      print("############################################")
+      print("##############################################")
+      print("#####   Você está no Módulo Produtos    ######")
+      print("##############################################")
       print("#####      1 - Cadastrar Tipo de Queijo  #####")
       print("#####      2 - Receita do Queijo         #####")
       print("#####      3 - Estoque                   #####")
@@ -182,7 +182,7 @@ while resp != '0':
   elif resp == '3':
       print()
       print("############################################")
-      print("#####    Você está no Módulo Vendas    ####")
+      print("#####    Você está no Módulo Vendas    #####")
       print("############################################")
       print("#####     1 - Queijos Ofertados        #####")
       print("#####     2 - Quantidade de Quejios    #####")
@@ -212,4 +212,3 @@ print("Até logo!")
 arq_cliente = open("clientes.dat", "wb")
 pickle.dump(clientes, arq_cliente)
 arq_cliente.close()
-
